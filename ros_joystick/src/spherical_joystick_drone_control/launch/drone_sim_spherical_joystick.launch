@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="spherical_joystick_drone_control" type="arduino_dynamixel_node.py" name="serial_communication" output="screen"/> 
+	<node pkg="spherical_joystick_drone_control" type="forward_kinematics_spherical_joystick_node.py" name="unity_game_control" output="screen" />
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" >
+	  <arg name="port" value="9090"/>
+	</include> 
+</launch>

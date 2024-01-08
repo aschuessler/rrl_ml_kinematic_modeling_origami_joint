@@ -1,0 +1,2 @@
+spherical_joystick_drone_control
+-DCATKIN_DEVEL_PREFIX=/home/administrator/joystick_ws/devel -DCMAKE_INSTALL_PREFIX=/home/administrator/joystick_ws/install -G Unix Makefiles
